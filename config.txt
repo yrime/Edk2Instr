@@ -1,0 +1,18 @@
+{
+     	"files":
+	[ 
+		"C:\\UefiAfl\\ForVisual2\\SB_fuzzing\\InfotecsPkg\\Application\\EnterToBiosSetup\\EnterToBiosSetup.inf"
+	],
+	"iFunc":
+	[ 
+		{
+			"package":"UefiAflProxy2"
+		}, 
+              	{
+			"init":"EFI_AFL_PROXY2_PROTOCOL *AflProxy2 = init_afl(%d);"
+		}, 
+              	{	
+			"func":"AflProxy2->afl_maybe_log(%d);"
+		}
+	] 
+}
